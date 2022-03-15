@@ -17,23 +17,40 @@ This repository carefully implemented important details of the official implemen
 - numpy
 
 ## Usage
-
+## My System commands
 ### Train
 Train the model by 250 labeled data of CIFAR-10 dataset:
 
 ```
-python train.py --gpu <gpu_id> --n-labeled 250 --out cifar10@250
+python3 train.py --gpu 0 --n-labeled 250 --out cifar10@250
 ```
 
 Train the model by 4000 labeled data of CIFAR-10 dataset:
 
 ```
-python train.py --gpu <gpu_id> --n-labeled 4000 --out cifar10@4000
+python3 train.py --gpu 0 --n-labeled 4000 --out cifar10@4000
 ```
 
 ### Monitoring training progress
 ```
-tensorboard.sh --port 6006 --logdir cifar10@250
+tensorboard --port 8008 --logdir cifar10@250### Train
+```
+## Default template commands
+Train the model by 250 labeled data of CIFAR-10 dataset:
+
+```
+python3 train.py --gpu <gpu_id> --n-labeled 250 --out cifar10@250
+```
+
+Train the model by 4000 labeled data of CIFAR-10 dataset:
+
+```
+python3 train.py --gpu <gpu_id> --n-labeled 4000 --out cifar10@4000
+```
+
+### Monitoring training progress
+```
+tensorboard --port 6006 --logdir cifar10@250
 ```
 
 ## Results (Accuracy)
@@ -53,3 +70,4 @@ tensorboard.sh --port 6006 --logdir cifar10@250
   year={2019}
 }
 ```
+Forked from https://github.com/YU1ut/MixMatch-pytorch
