@@ -20,6 +20,9 @@ This repository carefully implemented important details of the official implemen
 ## My System commands
 ### Train
 Train the model by 250 labeled data of CIFAR-10 dataset:
+```
+python3 train.py --gpu 0 --n-labeled 250 --train-iteration 10 --epochs 3 --out cifar10@250
+```
 
 ```
 python3 train.py --gpu 0 --n-labeled 250 --out cifar10@250
