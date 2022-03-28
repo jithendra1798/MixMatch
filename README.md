@@ -7,6 +7,14 @@ Now only experiments on CIFAR-10 are available.
 This repository carefully implemented important details of the official implementation to reproduce the results.
 
 
+# Instructions to use on Custom dataset
+1. Data should be kept inside custom_data folder.
+2. In custom_data folder 2 folders named "labeled" and "unlabeled" to be there.
+3. In "labeled" folder 2 folders named "train" and "test" will be there
+4. In each "train" and "test" folders, there should be folders of different classes (can be any no.of classes)
+4. In "unlabeled" folder all the unlabeled data to be there.
+
+
 ## Requirements
 - Python 3.6+
 - PyTorch 1.0
